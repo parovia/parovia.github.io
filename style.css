@@ -156,10 +156,16 @@ h3 {
 }
 
 img {
-    background: red;
+
     animation: createBox 2s;
+
     max-height: 250px;
   }
+
+#imgcont {
+    animation: dance 1s infinite;
+}
+
   @keyframes createBox {
     from {
       transform: scale(0) rotate(0deg);
@@ -167,6 +173,17 @@ img {
     to {
       transform: scale(1) rotate(720deg);
     }
+  }
+  @keyframes dance {
+    0% {
+        transform: rotate(-5deg);
+      }
+      50% {
+        transform: rotate(5deg);
+      }
+      100% {
+        transform: rotate(-5deg);
+      }
   }
 
 .carta {
